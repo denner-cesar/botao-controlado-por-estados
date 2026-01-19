@@ -1,0 +1,6 @@
+export  const  EVENTOS = {
+CLICAR : "CLICAR",
+SUCESSO : "SUCESSO",
+ERRO : "ERRO",
+RESERTAR : "RESERTAR"
+}

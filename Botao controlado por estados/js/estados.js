@@ -1,0 +1,7 @@
+ export const ESTADOS = {
+    PARADO : "PARADO",
+    CARREGANDO :"CARREGANDO",
+    SUCESSO : "SUCESSO",
+    ERRO :"ERRO",
+    DESABILITADO :"DESABILITADO"
+ }

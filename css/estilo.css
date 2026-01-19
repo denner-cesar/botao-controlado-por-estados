@@ -1,0 +1,65 @@
+:root {
+  --primaria: #4f46e5;
+  --primaria-hover: #4338ca;
+  --sucesso: #16a34a;
+  --erro: #dc2626;
+  --neutro: #64748b;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background:black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.botao {
+  min-width: 220px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: var(--primaria);
+  color: white;
+  transition: 
+    background 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.botao:hover:not(:disabled) {
+  background: var(--primaria-hover);
+  transform: translateY(-2px);
+}
+
+.botao:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.botao:disabled {
+  background: #cbd5f5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+.botao.sucesso {
+  background: var(--sucesso);
+}
+
+.botao.erro {
+  background: var(--erro);
+}
+
+#status {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--neutro);
+}
